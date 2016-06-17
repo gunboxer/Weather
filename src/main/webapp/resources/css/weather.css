@@ -1,0 +1,111 @@
+.controls, .weather-table, .search-controls, .history-table {
+    width: 100%;
+}
+
+.search-controls, .history-table, .search-controls td {
+    padding: 5px;
+}
+
+.history-table td {
+    border: solid 1px #bbbbbb;
+}
+
+.history-table, .weather-table {
+    margin-top: 10px;
+}
+
+.history-table th {
+    padding: 5px;
+    border: solid 2px #cccccc;
+}
+
+.search-controls .showhistory {
+    width: 70%
+}
+
+.search-controls .searcharea {
+    width: 20%
+}
+
+.search-controls .searchbutton {
+    width: 10%
+}
+
+.ie-border-radius-div {
+    border: solid 1px #bbbbbb;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.weather-table td {
+    padding: 15px;
+    width: auto;
+}
+
+.weather-table .weather-date, .weather-location, .weather-temperature {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+.weather-table .weather-icon {
+    height: 50px;
+    width: 50px;
+    overflow: auto;
+}
+
+.weather-table .weather-icon.icon01d {
+    background: url(/resources/images/01d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon01n {
+    background: url(/resources/images/01n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon02d {
+    background: url(/resources/images/02d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon02n {
+    background: url(/resources/images/02n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon03d {
+    background: url(/resources/images/03d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon03n {
+    background: url(/resources/images/03n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon04d {
+    background: url(/resources/images/04d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon04n {
+    background: url(/resources/images/04n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon09d {
+    background: url(/resources/images/09d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon09n {
+    background: url(/resources/images/09n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon10d {
+    background: url(/resources/images/10d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon10n {
+    background: url(/resources/images/10n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon11d {
+    background: url(/resources/images/11d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon11n {
+    background: url(/resources/images/11n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon13d {
+    background: url(/resources/images/13d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon13n {
+    background: url(/resources/images/13n.png) center no-repeat;
+}
+.weather-table .weather-icon.icon50d {
+    background: url(/resources/images/50d.png) center no-repeat;
+}
+.weather-table .weather-icon.icon50n {
+    background: url(/resources/images/50n.png) center no-repeat;
+}

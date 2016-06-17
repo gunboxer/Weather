@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.weather.web.mappers.UserMapper">
+
+  <select id="getUserByName" parameterType="string" resultType="com.weather.web.domain.User">
+     SELECT 
+      userName, 
+      password, 
+      administrator 
+     FROM USERS 
+     WHERE userName = #{userName}
+  </select>
+
+   <resultMap type="User" id="UserResult">
+    <result property="userName" column="userName"/>
+    <result property="password" column="password"/>
+    <result property="administrator" column="administrator"/>
+   </resultMap>
+  
+</mapper>

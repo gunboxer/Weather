@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.weather.web.mappers.HistoryMapper">
+    <insert id="insertHistory" parameterType="History" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO History (
+            userName,
+            filter,
+            city,
+            temperature
+        )
+        VALUES (
+            #{userName},
+            #{filter},
+            #{city},
+            #{temperature}
+        )
+    </insert>
+    
+    <select id="getHistoryCount" resultType="java.lang.Integer">
+        SELECT 
+            COUNT(*)
+        FROM History
+    </select>
+    
+    <select id="getHistoryList" parameterType="SelectLimitation" resultMap="result">
+        SELECT 
+            id, 
+            userName, 
+            sendDate, 
+            filter,
+            city,
+            temperature
+        FROM History
+        ORDER BY id DESC
+        LIMIT #{limit} OFFSET #{offset}
+    </select>
+    
+    <resultMap id="result" type="com.weather.web.domain.History">
+        <result property="id" column="id"/>
+        <result property="userName" column="userName"/>
+        <result property="sendDate" column="sendDate"/>
+        <result property="filter" column="filter"/>
+        <result property="city" column="city"/>
+        <result property="temperature" column="temperature"/>
+    </resultMap>
+</mapper>
